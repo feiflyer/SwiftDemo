@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleScrollerView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-    //    automaticallyAdjustsScrollViewInsets = false
+        automaticallyAdjustsScrollViewInsets = false
         
         setUpTitle()
         setChildViewController()
