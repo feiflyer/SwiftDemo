@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 
     //添加标题
     func setUpTitle(){
-        titleScrollerView.backgroundColor = UIColor.clearColor()
+        titleScrollerView.backgroundColor = UIColor.redColor()
         for var i = 0 ; i < CHILD_COUNT ; i++ {
             let label = CustomLabel(frame: CGRectMake(CGFloat(i * 100) , 0, 100, titleScrollerView.bounds.size.height))
             label.text = "头条\(i)"
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         print("----\(tap.view)")
         let tag = tap.view?.tag
         var offset = contentScrollerView.contentOffset
-        offset.x = CGFloat(tag!) * contentScrollerView.bounds.size.width
+        offset.x = CGFloat(tag! - START_TAG) * contentScrollerView.bounds.size.width
         //让动画执行之后才加载内容，节省内存
         contentScrollerView.setContentOffset(offset, animated: true);
     }
@@ -87,12 +87,11 @@ extension ViewController: UIScrollViewDelegate{
 //        }
         
         //如果已经加载过了就不重复加载了
-        if (vc.view.superview != nil) {
-            return
+        if (vc.view.superview == nil) {
+            vc.view.frame = CGRect(x: scrollView.contentOffset.x, y: 0, width: width, height: scrollView.bounds.size.height)
+            scrollView.addSubview(vc.view)
         }
             
-        vc.view.frame = CGRect(x: scrollView.contentOffset.x, y: 0, width: width, height: scrollView.bounds.size.height)
-        scrollView.addSubview(vc.view)
         
         //让对应的标题居中显示
         let titleLabel = titleScrollerView.viewWithTag(index + START_TAG)
@@ -108,9 +107,9 @@ extension ViewController: UIScrollViewDelegate{
         if titleOffset.x > maxOffset {
             titleOffset.x = maxOffset
         }
+        
         titleScrollerView.setContentOffset(titleOffset, animated: true)
         
-        print("----\(index)")
     }
     
     //认为拖动scrollerView松开手指虎会触发这个方法
@@ -121,22 +120,30 @@ extension ViewController: UIScrollViewDelegate{
     //只要scrollerView在动就回调用这个方法
     func scrollViewDidScroll(scrollView: UIScrollView) {
        
+        
         //获取需要操作Label的索引
         let width = scrollView.bounds.size.width
         let scal = scrollView.contentOffset.x / width
+        if (scal < 0 || scal > CGFloat(CHILD_COUNT - 1)) {
+           return;
+        }
+        
         let leftIndex  = Int(scal)
-        if(leftIndex == CHILD_COUNT - 1) {
+        
+        let rightIndex = leftIndex + 1
+        
+        if (leftIndex < 0 || rightIndex > CHILD_COUNT - 1){
             return
         }
-        let rightIndex = leftIndex + 1
         
         //右边的比例
         
         let rightScal = scal - CGFloat(leftIndex)
         //左边的比例
-        let leftScal = 1 - scal
+        let leftScal = 1 - rightScal
         print("---leftscal:\(leftScal)")
         print("---rightScal:\(rightScal)")
+        print("-----leftIndex\(leftIndex)")
       
         let leftLabel = titleScrollerView.viewWithTag(leftIndex + START_TAG) as! CustomLabel
         leftLabel.scal = leftScal
