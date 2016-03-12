@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		BE98232D1C93188500F1CCE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98232C1C93188500F1CCE7 /* AppDelegate.swift */; };
 		BE98232F1C93188500F1CCE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98232E1C93188500F1CCE7 /* ViewController.swift */; };
-		BE9823321C93188500F1CCE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9823301C93188500F1CCE7 /* Main.storyboard */; };
 		BE9823341C93188500F1CCE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9823331C93188500F1CCE7 /* Assets.xcassets */; };
 		BE9823371C93188500F1CCE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9823351C93188500F1CCE7 /* LaunchScreen.storyboard */; };
+		BEE2BF6C1C944EC100CC8CAB /* ad_00.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE2BF6B1C944EC100CC8CAB /* ad_00.png */; };
+		BEE2BF6E1C94582000CC8CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE2BF6D1C94582000CC8CAB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE9823291C93188500F1CCE7 /* UIScrollerView悬停Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIScrollerView悬停Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE98232C1C93188500F1CCE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE98232E1C93188500F1CCE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BE9823311C93188500F1CCE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE9823331C93188500F1CCE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE9823361C93188500F1CCE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE9823381C93188500F1CCE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE2BF6B1C944EC100CC8CAB /* ad_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ad_00.png; sourceTree = "<group>"; };
+		BEE2BF6D1C94582000CC8CAB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,9 @@
 			children = (
 				BE98232C1C93188500F1CCE7 /* AppDelegate.swift */,
 				BE98232E1C93188500F1CCE7 /* ViewController.swift */,
-				BE9823301C93188500F1CCE7 /* Main.storyboard */,
 				BE9823331C93188500F1CCE7 /* Assets.xcassets */,
+				BEE2BF6B1C944EC100CC8CAB /* ad_00.png */,
+				BEE2BF6D1C94582000CC8CAB /* Main.storyboard */,
 				BE9823351C93188500F1CCE7 /* LaunchScreen.storyboard */,
 				BE9823381C93188500F1CCE7 /* Info.plist */,
 			);
@@ -123,9 +126,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE2BF6C1C944EC100CC8CAB /* ad_00.png in Resources */,
 				BE9823371C93188500F1CCE7 /* LaunchScreen.storyboard in Resources */,
 				BE9823341C93188500F1CCE7 /* Assets.xcassets in Resources */,
-				BE9823321C93188500F1CCE7 /* Main.storyboard in Resources */,
+				BEE2BF6E1C94582000CC8CAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,14 +148,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BE9823301C93188500F1CCE7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE9823311C93188500F1CCE7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BE9823351C93188500F1CCE7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +283,7 @@
 				BE98233D1C93188500F1CCE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
