@@ -18,6 +18,8 @@ class LineView: UIView {
         drawSimple()
         
        drawBezierPath()
+        
+        绘制曲线()
     }
     
     
@@ -65,6 +67,14 @@ class LineView: UIView {
         path.addLineToPoint(CGPoint(x: 400, y: 400))
         //绘制路径
         path.stroke()
+    }
+    
+    //绘制曲线
+    func 绘制曲线() {
+        let context = UIGraphicsGetCurrentContext()
+        CGContextMoveToPoint(context, 30, 30)
+        CGContextAddQuadCurveToPoint(context, 100, 300, 200, 400)
+        CGContextStrokePath(context)
     }
 
 

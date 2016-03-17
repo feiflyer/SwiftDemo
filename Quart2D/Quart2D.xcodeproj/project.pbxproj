@@ -13,6 +13,7 @@
 		BE196E2C1C99A2BC006166A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE196E2B1C99A2BC006166A1 /* Assets.xcassets */; };
 		BE196E2F1C99A2BC006166A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE196E2D1C99A2BC006166A1 /* LaunchScreen.storyboard */; };
 		BE196E371C99A2D1006166A1 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE196E361C99A2D1006166A1 /* LineView.swift */; };
+		BED901F71C9AE2B0003DF342 /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED901F61C9AE2B0003DF342 /* ShapeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BE196E2E1C99A2BC006166A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE196E301C99A2BC006166A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE196E361C99A2D1006166A1 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		BED901F61C9AE2B0003DF342 /* ShapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BE196E2D1C99A2BC006166A1 /* LaunchScreen.storyboard */,
 				BE196E301C99A2BC006166A1 /* Info.plist */,
 				BE196E361C99A2D1006166A1 /* LineView.swift */,
+				BED901F61C9AE2B0003DF342 /* ShapeView.swift */,
 			);
 			path = Quart2D;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			files = (
 				BE196E271C99A2BC006166A1 /* ViewController.swift in Sources */,
 				BE196E251C99A2BC006166A1 /* AppDelegate.swift in Sources */,
+				BED901F71C9AE2B0003DF342 /* ShapeView.swift in Sources */,
 				BE196E371C99A2D1006166A1 /* LineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +295,7 @@
 				BE196E351C99A2BC006166A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
