@@ -15,6 +15,8 @@
 		BE196E371C99A2D1006166A1 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE196E361C99A2D1006166A1 /* LineView.swift */; };
 		BEB1B5EC1C9D2F2500F6A30C /* CakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1B5EB1C9D2F2500F6A30C /* CakeView.swift */; };
 		BEB1B5EE1C9D2F6300F6A30C /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1B5ED1C9D2F6300F6A30C /* UIColorExtention.swift */; };
+		BEB1B5F01C9D462800F6A30C /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1B5EF1C9D462800F6A30C /* DrawView.swift */; };
+		BEB1B5F21C9D7DA800F6A30C /* SnowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1B5F11C9D7DA800F6A30C /* SnowView.swift */; };
 		BED901F71C9AE2B0003DF342 /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED901F61C9AE2B0003DF342 /* ShapeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		BE196E361C99A2D1006166A1 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		BEB1B5EB1C9D2F2500F6A30C /* CakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeView.swift; sourceTree = "<group>"; };
 		BEB1B5ED1C9D2F6300F6A30C /* UIColorExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
+		BEB1B5EF1C9D462800F6A30C /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		BEB1B5F11C9D7DA800F6A30C /* SnowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowView.swift; sourceTree = "<group>"; };
 		BED901F61C9AE2B0003DF342 /* ShapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,12 +70,14 @@
 				BE196E261C99A2BC006166A1 /* ViewController.swift */,
 				BE196E281C99A2BC006166A1 /* Main.storyboard */,
 				BE196E2B1C99A2BC006166A1 /* Assets.xcassets */,
+				BEB1B5F11C9D7DA800F6A30C /* SnowView.swift */,
 				BE196E2D1C99A2BC006166A1 /* LaunchScreen.storyboard */,
 				BE196E301C99A2BC006166A1 /* Info.plist */,
 				BE196E361C99A2D1006166A1 /* LineView.swift */,
 				BED901F61C9AE2B0003DF342 /* ShapeView.swift */,
 				BEB1B5EB1C9D2F2500F6A30C /* CakeView.swift */,
 				BEB1B5ED1C9D2F6300F6A30C /* UIColorExtention.swift */,
+				BEB1B5EF1C9D462800F6A30C /* DrawView.swift */,
 			);
 			path = Quart2D;
 			sourceTree = "<group>";
@@ -150,6 +156,8 @@
 			files = (
 				BE196E271C99A2BC006166A1 /* ViewController.swift in Sources */,
 				BE196E251C99A2BC006166A1 /* AppDelegate.swift in Sources */,
+				BEB1B5F01C9D462800F6A30C /* DrawView.swift in Sources */,
+				BEB1B5F21C9D7DA800F6A30C /* SnowView.swift in Sources */,
 				BEB1B5EE1C9D2F6300F6A30C /* UIColorExtention.swift in Sources */,
 				BED901F71C9AE2B0003DF342 /* ShapeView.swift in Sources */,
 				BEB1B5EC1C9D2F2500F6A30C /* CakeView.swift in Sources */,

@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8a-5C-8c3" customClass="CakeView" customModule="Quart2D" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8a-5C-8c3" customClass="SnowView" customModule="Quart2D" customModuleProvider="target">
                                 <rect key="frame" x="20" y="20" width="560" height="580"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.8458733974" green="0.8458733974" blue="0.8458733974" alpha="1" colorSpace="calibratedRGB"/>
