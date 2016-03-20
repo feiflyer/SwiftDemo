@@ -20,12 +20,14 @@ class LineView: UIView {
        drawBezierPath()
         
         绘制曲线()
+        
+        上下文矩阵操作()
     }
     
     
     //绘制的基本步骤（底层原理）
     func drawBase(){
-        // 1、获取上下文
+        // 1、获取上下文（view相关的上下文也即是layer上下文）
         let context = UIGraphicsGetCurrentContext()
         // 2、描述路径
         let path = CGPathCreateMutable()
@@ -75,6 +77,20 @@ class LineView: UIView {
         CGContextMoveToPoint(context, 30, 30)
         CGContextAddQuadCurveToPoint(context, 100, 300, 200, 400)
         CGContextStrokePath(context)
+    }
+    
+    func 上下文矩阵操作(){
+        let context = UIGraphicsGetCurrentContext()
+        let path = UIBezierPath(ovalInRect: CGRect(x: -100, y: -100, width: 100, height: 160))
+        //移动上下文，如果不移动是看不见椭圆的
+        //注意，移动上下文一定要在添加路径之前，否则是无效的
+        CGContextTranslateCTM(context, 200, 200)
+        
+        CGContextRotateCTM(context, 20)
+        
+        CGContextAddPath(context, path.CGPath)
+        UIColor.redColor().set()
+        CGContextFillPath(context)
     }
 
 
