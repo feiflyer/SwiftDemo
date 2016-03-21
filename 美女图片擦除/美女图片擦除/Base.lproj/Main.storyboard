@@ -16,12 +16,40 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2B" translatesAutoresizingMaskIntoConstraints="NO" id="TfR-mH-UNk" userLabel="下层">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2A" translatesAutoresizingMaskIntoConstraints="NO" id="TrQ-Lh-Dw1" userLabel="上层">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TfR-mH-UNk" secondAttribute="bottom" id="6Je-yS-0rK"/>
+                            <constraint firstItem="TfR-mH-UNk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MqD-kx-nPc"/>
+                            <constraint firstAttribute="trailing" secondItem="TrQ-Lh-Dw1" secondAttribute="trailing" id="O9q-Qv-dHs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TrQ-Lh-Dw1" secondAttribute="bottom" id="blx-8n-CzW"/>
+                            <constraint firstItem="TrQ-Lh-Dw1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="caz-uY-YJh"/>
+                            <constraint firstItem="TrQ-Lh-Dw1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nzJ-xF-QJY"/>
+                            <constraint firstItem="TfR-mH-UNk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wB2-2m-fpX"/>
+                            <constraint firstAttribute="trailing" secondItem="TfR-mH-UNk" secondAttribute="trailing" id="z9j-SN-SDr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hideImageView" destination="TfR-mH-UNk" id="BPx-7I-Jg4"/>
+                        <outlet property="topImageView" destination="TrQ-Lh-Dw1" id="jEk-al-Zct"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="2A" width="480" height="720"/>
+        <image name="2B" width="480" height="720"/>
+    </resources>
 </document>
