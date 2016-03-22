@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="图片折叠" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="小新" translatesAutoresizingMaskIntoConstraints="NO" id="z90-iq-HZK">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="bQH-a9-25y"/>
+                                    <constraint firstAttribute="width" constant="200" id="wLw-Wu-sLE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="小新" translatesAutoresizingMaskIntoConstraints="NO" id="G9p-Zj-V1c">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2xD-lv-STa"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="DBr-Sx-i68"/>
+                                    <constraint firstAttribute="height" constant="200" id="Tcy-TY-8Mb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="ehe-iU-hxc"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imG-nq-yHO">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Lck-0L-zlZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="ofB-rD-a3B"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="imG-nq-yHO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="37P-Z9-YuE"/>
+                            <constraint firstItem="imG-nq-yHO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Pn6-iT-CSa"/>
+                            <constraint firstItem="G9p-Zj-V1c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="deY-Ud-kuo"/>
+                            <constraint firstItem="z90-iq-HZK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gtm-uu-ASr"/>
+                            <constraint firstItem="G9p-Zj-V1c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ugf-ay-soS"/>
+                            <constraint firstItem="z90-iq-HZK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yYq-Oz-jMI"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bottomView" destination="z90-iq-HZK" id="5It-cs-CGo"/>
+                        <outlet property="dragView" destination="imG-nq-yHO" id="7XG-GO-V8G"/>
+                        <outlet property="topView" destination="G9p-Zj-V1c" id="Xan-mr-5MU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="350" y="300"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="小新" width="200" height="200"/>
+    </resources>
+</document>
