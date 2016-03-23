@@ -29,15 +29,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MSq-EP-RtZ">
+                                <rect key="frame" x="110" y="112" width="100" height="100"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.98410694030000001" green="1" blue="0.22321748899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="6jR-b6-oPp"/>
+                                    <constraint firstAttribute="width" constant="100" id="faG-pk-psz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="MSq-EP-RtZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5iP-eN-PbW"/>
                             <constraint firstItem="pzk-Jm-qWJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bz1-j2-cJD"/>
+                            <constraint firstItem="pzk-Jm-qWJ" firstAttribute="top" secondItem="MSq-EP-RtZ" secondAttribute="bottom" constant="8" id="bvg-Fi-FmH"/>
                             <constraint firstItem="pzk-Jm-qWJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="enC-mO-EFT"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="MSq-EP-RtZ" id="fsI-dZ-gTn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
