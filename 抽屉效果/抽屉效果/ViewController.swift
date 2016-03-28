@@ -35,7 +35,6 @@ class ViewController: UIViewController {
         mainView.addObserver(self, forKeyPath: "frame", options: .New, context: nil)
     }
     
-    
     func addGesture(){
         let gesture = UIPanGestureRecognizer(target: self, action: "panChange:")
         view.addGestureRecognizer(gesture)

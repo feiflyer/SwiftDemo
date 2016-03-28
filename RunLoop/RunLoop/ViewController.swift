@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         loop.addTimer(timer, forMode: NSRunLoopCommonModes)
     }
     
-    
+
     func runLoopObserver(){
         let observer = CFRunLoopObserverCreateWithHandler(kCFAllocatorDefault, CFRunLoopActivity.AllActivities.rawValue, true, 0) { (_, _) -> Void in
             print("----observer回调")
